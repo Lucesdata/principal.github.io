@@ -1,4 +1,4 @@
-!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -12,7 +12,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid shadow-sm p-3 mb-5 bg-body rounded">
+        <div class="container-fluid shadow-sm mb-2 bg-body rounded">
           <a class="navbar-brand" href="#">Agua Potable</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -35,136 +35,498 @@
       <div class="container">
 
         <div class="row">
-            <div class="col">
+            <div class="col text-center">
               <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
                 <div class="card-header">PTAPS</div>
                 <div class="card-body">
-                  <h5 class="card-title">37</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a class="btn btn-dark btn-sm rounded-pill" data-bs-toggle="collapse" href="#ptaps" role="button" aria-expanded="false" aria-controls="ptaps">
+                        37 Sistemas
+                    </a>
+
+                  <p class="card-text">Plantas de tratamiento de agua potable</p>
+                </div>
+              </div>
+
+              <div class="collapse" id="ptaps">
+                <div class="card card-body">
+                  <div class="row">
+                    <div class="col">
+                      <ol class="list-group list-group-numbered">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Cras justo odio</li>
+                      </ol>
+                    </div>
+                    
+                  </div>
                 </div>
               </div>
             </div>
             
-            <div class="col">
-              <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                <div class="card-header">PTARS</div>
-                <div class="card-body">
-                  <h5 class="card-title">11</h5>
-                  <p class="card-text">Sistemas de tratamiento biologico con alcantarillado en 11 cabeceras municipales</p>
-                </div>
-              </div>
+            <div class="col text-center">
+
+                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">PTARS</div>
+                    <div class="card-body">
+                        <a class="btn btn-dark btn-sm rounded-pill" data-bs-toggle="collapse" href="#ptars" role="button" aria-expanded="false" aria-controls="ptars">
+                            11 Sistemas
+                        </a>    
+    
+                      <p class="card-text">Plantas de tratamiento de agua residual.</p>
+                    </div>
+                  </div>
+    
+                  <div class="collapse" id="ptars">
+                    <div class="card card-body">
+                      las plantas se encuentran en las siguientes veredas.
+                    </div>
+                  </div>
             </div>
             
-            <div class="col">
-              <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                <div class="card-header">TOTAL usuarios</div>
-                <div class="card-body">
-                  <h5 class="card-title">15.000</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
+            <div class="col text-center">
+              
+                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">USUARIOS</div>
+                    <div class="card-body">
+                        <a class="btn btn-dark btn-sm rounded-pill" data-bs-toggle="collapse" href="#usuarios" role="button" aria-expanded="false" aria-controls="usuarios">
+                            13.0000
+                        </a>                            
+    
+                      <p class="card-text">viviendas conectadas por ususrio inscrito en el acueducto</p>
+                    </div>
+                  </div>
+    
+                  <div class="collapse" id="usuarios">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    </div>
+                  </div>
+
             </div>
             
-            <div class="col">
-              <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                <div class="card-header">TOTAL habitantes</div>
-                <div class="card-body">
-                  <h5 class="card-title">50.000</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
+            <div class="col text-center">
+              
+                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">HABITANTES</div>
+                    <div class="card-body">
+                        <a class="btn btn-dark btn-sm rounded-pill" data-bs-toggle="collapse" href="#habitantes" role="button" aria-expanded="false" aria-controls="habitantes">
+                            60.0000
+                        </a>    
+    
+                      <p class="card-text">Plantas de tratamiento de agua potable.</p>
+                    </div>
+                  </div>
+    
+                  <div class="collapse" id="habitantes">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    </div>
+                  </div>
             </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6 text-center">
+          <div class="card">
+            <div class="card-header text-white bg-primary mb-3">
+              Descripcion de las PTAPS
+            </div>
+            <div class="card-body">
+              <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Numero de Plantas
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+        </ol>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 text-center">
+          <div class="card">
+            <div class="card-header text-white bg-primary mb-3">
+              Descripcion de las PTARS
+            </div>
+            <div class="card-body">
+              <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Numero de Tanques
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Cras justo odio</li>
+          
+        </ol>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+        
+
       </div>
 
       <div class="container shadow-sm p-3 mb-5 bg-body rounded">
         <div class="row">
             <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+              <div class="card border border-primary border-0">
+
+                <p>
+                    <a class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                      Montebello
+                    </a>
+                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Castilla 
+                    </button>
+                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    La Paz 
+                    </button>
+                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Golondrinas 
+                    </button>
+                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        La Elvira 
+                    </button>
+                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Saladito 
+                    </button>
+                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Felidia 
+                    </button>
+                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Leonera 
+                    </button>
+                  </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    </div>
                 </div>
+
+                <div class="collapse" id="collapseExample2">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    </div>
+                </div>
+
+                 <p>
+                    <a class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      Andes 
+                    </a>
+                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      Buitrera 
+                    </button>
+                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Villacarmelo 
+                    </button>
+                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Pance 
+                    </button>
+                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Hormiguero 
+                    </button>
+                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Navarro 
+                    </button>
+                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Pichinde 
+                    </button>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    </div>
+                  </div>
+
+
               </div>
             </div>
             <div class="col-sm-6">
-              <div class="card">
+              <div class="card text-center border border-primary border-0">
                 <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <h5 class="card-title">DISTRIBUCION DE CUENCAS</h5>
+
+                 <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+  Rio Cali
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel2">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+  Lili, Melendez, Cañaveralejo
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel2">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+  Pance, Jamundi
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel2">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
                 </div>
               </div>
             </div>
           </div>
       </div>        
       
-      <div class="container shadow-sm p-3 mb-5 bg-body rounded">
-          <div class="row">
-              <div class="col-sm-6">
-                <ol class="list-group list-group-numbered">
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                      <div class="ms-2 me-auto">
-                        <div class="fw-bold">Subheading</div>
-                        Cras justo odio
-                      </div>
-                      <span class="badge bg-primary rounded-pill">14</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                      <div class="ms-2 me-auto">
-                        <div class="fw-bold">Subheading</div>
-                        Cras justo odio
-                      </div>
-                      <span class="badge bg-primary rounded-pill">14</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
-                      <div class="ms-2 me-auto">
-                        <div class="fw-bold">Subheading</div>
-                        Cras justo odio
-                      </div>
-                      <span class="badge bg-primary rounded-pill">14</span>
-                    </li>
-                  </ol>
-              </div>
-              <div class="col-sm-6">
+      
+          
+          
+      
+    </div>
 
-                <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                                 
+    <div class="container text-center">
+      <div class="row">
+
+        <div class="col-sm-6 text-center">
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  
+      
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">MONTEBELLO</div>
+                    Serviaguas .ESP
+                  </div>
+                  <span class="badge bg-primary rounded-pill">14.000</span>
+                  <span class="badge bg-primary rounded-pill">14.000</span>
+                  <span class="badge bg-primary rounded-pill">14.000</span>
+      
+      
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
               </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              </div>
+            </div>
           </div>
-      </div>       
+    
+        </div>
+
+        <div class="col-sm-6">
+
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">ACUEDUCTO</th>
+                <th scope="col">NIT</th>
+                <th scope="col">R. LEGAL</th>
+                <th scope="col">R. LEGAL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+            </tbody>
+          </table>
+  
+  
+        </div>
+
+
+      </div>
+      </div>
+
+      
 
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      
+
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     
   </body>
