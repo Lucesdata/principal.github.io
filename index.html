@@ -30,504 +30,1262 @@
             </form>
           </div>
         </div>
-      </nav>
-    
+    </nav>
+
       <div class="container">
 
-        <div class="row">
-            <div class="col text-center">
-              <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                <div class="card-header">PTAPS</div>
-                <div class="card-body">
-                    <a class="btn btn-dark btn-sm rounded-pill" data-bs-toggle="collapse" href="#ptaps" role="button" aria-expanded="false" aria-controls="ptaps">
-                        37 Sistemas
-                    </a>
+        <!-- FILA UNO -->
 
-                  <p class="card-text">Plantas de tratamiento de agua potable</p>
+
+      <div class="row">
+
+        <!-- FILA UNO; PRIMER BOTON -> ACUEDUCTOS TECNICOS-->
+
+        <div class="col-sm-6 text-center shadow-sm p-3 mb-5 bg-body rounded">
+          <div class="card ">
+
+            <div class="card-header text-white bg-info mb-3">
+              ACUEDUCTOS RURALES
+            </div>
+            <div class="card-body">
+              
+              <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="acueductosRioCali" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="acueductosRioCali">ACUEDUCTOS/VEREDAS</h5>
+
+                      <div class="modal-header">
+                        <div class="container">
+                          <button class="btn btn-primary" data-bs-target="#conptap" data-bs-toggle="modal" data-bs-dismiss="modal">Veredas con PTAP</button>
+                        </div>
+                      </div>
+
+                      <div class="modal-header">
+                        <div class="container">
+                          <button class="btn btn-primary" data-bs-target="#sinptap" data-bs-toggle="modal" data-bs-dismiss="modal">Veredas sin PTAP</button>
+                        </div>
+                      </div>     
+
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      
+                    </div>
+                    <div class="modal-body">
+                      <table class="table list-group-item-info">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Corregimiento</th>
+                            <th scope="col">Vereda</th>
+                            <th scope="col">Nombre J.A.A</th>
+                            <th scope="col">Fuente de abast</th>
+                            <th scope="col">Caudal Concesion</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Los Andes</td>
+                            <td>Pilas de Cabuyal</td>
+                            <td>ACUAPILAS</td>
+                            <td>Q. Los Venados</td>
+                            <td>2 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Los Andes</td>
+                            <td>La Reforma</td>
+                            <td>ACUAREFORMA</td>
+                            <td>Q. La Soledad</td>
+                            <td>3 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Los Andes</td>
+                            <td>Cabuyal Cristo Rey</td>
+                            <td>ASOCABUYAL</td>
+                            <td>Q. La Soledad</td>
+                            <td>4,2 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Los Andes</td>
+                            <td>Monaco</td>
+                            <td>ACUAMONACO</td>
+                            <td>Q. La Soledad</td>
+                            <td>4.2 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>Los Andes</td>
+                            <td>Mameyal</td>
+                            <td>ACUAMAMEYAL</td>
+                            <td>Q. La Soledad</td>
+                            <td>4.2 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>Los Andes</td>
+                            <td>El Faro</td>
+                            <td>ACUAFANDES</td>
+                            <td>Q. Los Venados</td>
+                            <td>2 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">8</th>
+                            <td>Felidia</td>
+                            <td>Felidia Cab</td>
+                            <td>ECAAF</td>
+                            <td>Q. Felidia</td>
+                            <td>12 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">9</th>
+                            <td>Felidia</td>
+                            <td>Diamante-Soledad-Cedral</td>
+                            <td>ASUAP</td>
+                            <td>Q. El Roble</td>
+                            <td>3 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">10</th>
+                            <td>La Elvira</td>
+                            <td>Elvira Cab</td>
+                            <td>ACUAELVIRA</td>
+                            <td>Q. El Libano, Q. Los Arrieros</td>
+                            <td>4.75 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">11</th>
+                            <td>La Elvira</td>
+                            <td>Kilometro 18</td>
+                            <td>ACUA 18</td>
+                            <td>Q. Las Mercedes</td>
+                            <td>1 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">14</th>
+                            <td>La Elvira</td>
+                            <td>San Rafael</td>
+                            <td>ASOAGUACLARA</td>
+                            <td>Q. Agua Clara</td>
+                            <td>2 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">15</th>
+                            <td>La Elvira</td>
+                            <td>Alto Aguacatal</td>
+                            <td>ASOAGUACATAL</td>
+                            <td>Q. La Margarita</td>
+                            <td>2 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">16</th>
+                            <td>La Elvira</td>
+                            <td>Laureles</td>
+                            <td>Laureles</td>
+                            <td>Q. La Margarita</td>
+                            <td>3 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">17</th>
+                            <td>Montebello</td>
+                            <td>Montebello</td>
+                            <td>SERVIAGUAS</td>
+                            <td>Q. El chocho, Cadica Aguacatal</td>
+                            <td>34 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">18</th>
+                            <td>Montebello</td>
+                            <td>Campoalegre</td>
+                            <td>ACOPS</td>
+                            <td>Q. El Chocho, Q El Rosario</td>
+                            <td>8,1 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">19</th>
+                            <td>Castilla</td>
+                            <td>Castilla Cab</td>
+                            <td>ASOUSUARIOS</td>
+                            <td>Q. La Gorgona, Q. El marin, Q. El Chilo</td>
+                            <td>1,6 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">20</th>
+                            <td>Castilla</td>
+                            <td>Las Palmas</td>
+                            <td>ECAUSA</td>
+                            <td>Q. El Chocho</td>
+                            <td>3,1 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">21</th>
+                            <td>Castilla</td>
+                            <td>Limones</td>
+                            <td>ACUAMIRLAS</td>
+                            <td>Cadica Aguacatal</td>
+                            <td>1 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">22</th>
+                            <td>Golondrinas</td>
+                            <td>Golondrinas</td>
+                            <td>ESAAG</td>
+                            <td>Q. El Chocho</td>
+                            <td>3.5 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">23</th>
+                            <td>La Paz</td>
+                            <td>La Paz Cab</td>
+                            <td>JADAC</td>
+                            <td>Q. La Olga</td>
+                            <td>1.9 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">24</th>
+                            <td>La Paz</td>
+                            <td>La Paz Baja</td>
+                            <td>JAGUABAJA</td>
+                            <td>Q. Perez</td>
+                            <td>3,1 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">25</th>
+                            <td>La Paz</td>
+                            <td>Villa del Rosario</td>
+                            <td>ASOAGUAS</td>
+                            <td>Q. El Chocho</td>
+                            <td>1.9 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">26</th>
+                            <td>La Paz</td>
+                            <td>Lomitas</td>
+                            <td>ACUALOMITAS</td>
+                            <td>Q. El Chocho</td>
+                            <td>1 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">27</th>
+                            <td>Pichinde</td>
+                            <td>Pichinde</td>
+                            <td>ACUAPICHINDE</td>
+                            <td>Q. Los Carpatos, Q. Los Duques, Q. La Honoria</td>
+                            <td>6,3 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">28</th>
+                            <td>La Leonera</td>
+                            <td>La Leonera</td>
+                            <td>ASOUSUARIOS</td>
+                            <td>Q. El Roble</td>
+                            <td>10 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">29</th>
+                            <td>La Leonera</td>
+                            <td>Porvenir</td>
+                            <td>ASOUSUARIOS</td>
+                            <td>Q. El Roble</td>
+                            <td>2,5 l/s</td>
+                          </tr>
+                        </tbody>
+                      </table>                      
+                    </div>
+
+                  </div>
                 </div>
               </div>
 
-              <div class="collapse" id="ptaps">
-                <div class="card card-body">
-                  <div class="row">
-                    <div class="col">
-                      <ol class="list-group list-group-numbered">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Cras justo odio</li>
-                      </ol>
+              <!-- veredas con ptap ide: "conptap"-->
+
+
+              <div class="modal fade" id="conptap" aria-hidden="true" aria-labelledby="conptap" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="conptap">Veredas con Tratamiento y Servicio de Agua Potable</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+
+                      <div class="modal-body">
+                        <table class="table list-group-item-dark">
+                          <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Corregimiento</th>
+                              <th scope="col">Vereda</th>
+                              <th scope="col">Nombre J.A.A</th>
+                              <th scope="col">Fuente de abast</th>
+                              <th scope="col">Caudal Concesion</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Los Andes</td>
+                              <td>Pilas de Cabuyal</td>
+                              <td>ACUAPILAS</td>
+                              <td>Q. Los Venados</td>
+                              <td>2 l/s</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Los Andes</td>
+                              <td>La Reforma</td>
+                              <td>ACUAREFORMA</td>
+                              <td>Q. La Soledad</td>
+                              <td>3 l/s</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>Los Andes</td>
+                              <td>Cabuyal Cristo Rey</td>
+                              <td>ASOCABUYAL</td>
+                              <td>Q. La Soledad</td>
+                              <td>4,2 l/s</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">4</th>
+                              <td>Los Andes</td>
+                              <td>Monaco</td>
+                              <td>ACUAMONACO</td>
+                              <td>Q. La Soledad</td>
+                              <td>4.2 l/s</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">5</th>
+                              <td>Los Andes</td>
+                              <td>Mameyal</td>
+                              <td>ACUAMAMEYAL</td>
+                              <td>Q. La Soledad</td>
+                              <td>4.2 l/s</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">8</th>
+                              <td>Felidia</td>
+                              <td>Felidia Cab</td>
+                              <td>ECAAF</td>
+                              <td>Q. Felidia</td>
+                              <td>12 l/s</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">9</th>
+                              <td>Felidia</td>
+                              <td>Diamante-Soledad-Cedral</td>
+                              <td>ASUAP</td>
+                              <td>Q. El Roble</td>
+                              <td>3 l/s</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">10</th>
+                              <td>La Elvira</td>
+                              <td>Elvira Cab</td>
+                              <td>ACUAELVIRA</td>
+                              <td>Q. El Libano, Q. Los Arrieros</td>
+                              <td>4.75 l/s</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">11</th>
+                              <td>La Elvira</td>
+                              <td>Kilometro 18</td>
+                              <td>ACUA 18</td>
+                              <td>Q. Las Mercedes</td>
+                              <td>1 l/s</td>
+                            </tr>
+                            
+                            <tr>
+                              <th scope="row">13</th>
+                              <td>La Elvira</td>
+                              <td>Alto Aguacatal</td>
+                              <td>ASOAGUACATAL</td>
+                              <td>Q. La Margarita</td>
+                              <td>2 l/s</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">16</th>
+                              <td>El Saladito</td>
+                              <td>San Pablo</td>
+                              <td>LA SAMARIA</td>
+                              <td>Q. La Samaria</td>
+                              <td>3 l/s</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">18</th>
+                              <td>Montebello</td>
+                              <td>Montebello</td>
+                              <td>SERVIAGUAS</td>
+                              <td>Q. El chocho, Cadica Aguacatal</td>
+                              <td>34 l/s</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">19</th>
+                              <td>Montebello</td>
+                              <td>Campoalegre</td>
+                              <td>ACOPS</td>
+                              <td>Q. El Chocho, Q El Rosario</td>
+                              <td>8,1 l/s</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">20</th>
+                              <td>Castilla</td>
+                              <td>Castilla Cab</td>
+                              <td>ASOUSUARIOS</td>
+                              <td>Q. La Gorgona, Q. El marin, Q. El Chilo</td>
+                              <td>1,6 l/s</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">21</th>
+                              <td>Castilla</td>
+                              <td>Las Palmas</td>
+                              <td>ECAUSA</td>
+                              <td>Q. El Chocho</td>
+                              <td>3,1 l/s</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">22</th>
+                              <td>Castilla</td>
+                              <td>Limones</td>
+                              <td>ACUAMIRLAS</td>
+                              <td>Cadica Aguacatal</td>
+                              <td>1 l/s</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">23</th>
+                              <td>Golondrinas</td>
+                              <td>Golondrinas</td>
+                              <td>ESAAG</td>
+                              <td>Q. El Chocho</td>
+                              <td>3.5 l/s</td>
+                            </tr> 
+                            <tr>
+                              <th scope="row">24</th>
+                              <td>La Paz</td>
+                              <td>La Paz Cab</td>
+                              <td>JADAC</td>
+                              <td>Q. La Olga</td>
+                              <td>1.9 l/s</td>
+                            </tr>                            
+                            <tr>
+                              <th scope="row">26</th>
+                              <td>La Paz</td>
+                              <td>Villa del Rosario</td>
+                              <td>ASOAGUAS</td>
+                              <td>Q. El Chocho</td>
+                              <td>1.9 l/s</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">28</th>
+                              <td>Pichinde</td>
+                              <td>Pichinde</td>
+                              <td>ACUAPICHINDE</td>
+                              <td>Q. Los Carpatos, Q. Los Duques, Q. La Honoria</td>
+                              <td>6,3 l/s</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">28</th>
+                              <td>La Leonera</td>
+                              <td>La Leonera</td>
+                              <td>ASOUSUARIOS</td>
+                              <td>Q. El Roble</td>
+                              <td>10 l/s</td>
+                            </tr>                           
+                          </tbody>
+                        </table>                          
+                      </div>
+
                     </div>
                     
+
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            
-            <div class="col text-center">
 
-                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-header">PTARS</div>
-                    <div class="card-body">
-                        <a class="btn btn-dark btn-sm rounded-pill" data-bs-toggle="collapse" href="#ptars" role="button" aria-expanded="false" aria-controls="ptars">
-                            11 Sistemas
-                        </a>    
-    
-                      <p class="card-text">Plantas de tratamiento de agua residual.</p>
-                    </div>
-                  </div>
-    
-                  <div class="collapse" id="ptars">
-                    <div class="card card-body">
-                      las plantas se encuentran en las siguientes veredas.
-                    </div>
-                  </div>
-            </div>
-            
-            <div class="col text-center">
-              
-                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-header">USUARIOS</div>
-                    <div class="card-body">
-                        <a class="btn btn-dark btn-sm rounded-pill" data-bs-toggle="collapse" href="#usuarios" role="button" aria-expanded="false" aria-controls="usuarios">
-                            13.0000
-                        </a>                            
-    
-                      <p class="card-text">viviendas conectadas por ususrio inscrito en el acueducto</p>
-                    </div>
-                  </div>
-    
-                  <div class="collapse" id="usuarios">
-                    <div class="card card-body">
-                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                    </div>
-                  </div>
+              <!-- veredas con ptap ide: "sinptap"-->
 
-            </div>
-            
-            <div class="col text-center">
               
-                <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-header">HABITANTES</div>
-                    <div class="card-body">
-                        <a class="btn btn-dark btn-sm rounded-pill" data-bs-toggle="collapse" href="#habitantes" role="button" aria-expanded="false" aria-controls="habitantes">
-                            60.0000
-                        </a>    
-    
-                      <p class="card-text">Plantas de tratamiento de agua potable.</p>
+              <div class="modal fade" id="sinptap" aria-hidden="true" aria-labelledby="sinptap" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="sinptap">Veredas sin PTAP</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+
+                      <table class="table list-group-item-info">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Corregimiento</th>
+                            <th scope="col">Vereda</th>
+                            <th scope="col">Nombre J.A.A</th>
+                            <th scope="col">Fuente de abast</th>
+                            <th scope="col">Caudal Concesion</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Los Andes</td>
+                            <td>Cabuyal ventiaderos</td>
+                            <td>Ventiaderos</td>
+                            <td>Q. Los Venados</td>
+                            <td>2 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">12</th>
+                            <td>La Elvira</td>
+                            <td>San Rafael</td>
+                            <td>ASOAGUACLARA</td>
+                            <td>Q. Agua Clara</td>
+                            <td>2 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">14</th>
+                            <td>La Elvira</td>
+                            <td>Laureles</td>
+                            <td>Laureles</td>
+                            <td>Q. La Margarita</td>
+                            <td>3 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">15</th>
+                            <td>El Saladito</td>
+                            <td>Saladito Cab</td>
+                            <td>ECSAALADITO E.S.P</td>
+                            <td>Q. Los Arrieros </td>
+                            <td>2 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">17</th>
+                            <td>El Saladito</td>
+                            <td>El Palomar</td>
+                            <td>ACUAPALOMAR</td>
+                            <td>Q. La Virgen</td>
+                            <td>4,2 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">25</th>
+                            <td>La Paz</td>
+                            <td>La Paz Baja</td>
+                            <td>JAGUABAJA</td>
+                            <td>Q. Perez</td>
+                            <td>3,1 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">27</th>
+                            <td>La Paz</td>
+                            <td>Lomitas</td>
+                            <td>ACUALOMITAS</td>
+                            <td>Q. El Chocho</td>
+                            <td>1 l/s</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">28</th>
+                            <td>La Leonera</td>
+                            <td>Porvenir</td>
+                            <td>ASOUSUARIOS</td>
+                            <td>Q. El Roble</td>
+                            <td>2,5 l/s</td>
+                          </tr>                                                    
+                        </tbody>
+                      </table>
+
+                    </div>
+                    
+
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
                     </div>
                   </div>
-    
-                  <div class="collapse" id="habitantes">
-                    <div class="card card-body">
-                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                    </div>
-                  </div>
+                </div>
+              </div>
+
+              <a class="btn bg-info" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Rio Cali</a>
+
+              <!-- hasta aqui llega el primer boton-->
+              
             </div>
+
+
+
+          </div>
+        </div>
+
+        <!-- FILA UNO; SEGUNDO BOTON -> ACUEDUCTOS ADMINISTRATIVOS-->
+
+        <div class="col-sm-6 text-center shadow-sm p-3 mb-5 bg-body rounded">
+          <div class="card">
+
+            <div class="card-header text-white bg-primary mb-3">
+              Distribucion Administrativa J.A.A
+            </div>
+        
+            <!-- tres botones -->
+    
+            <div class="card-body">
+    
+    
+              <!------------------------------------------------- Primer boton Rio Cali ------------------------------------------------------------------->
+    
+              <!-- Modal Rio cali 1 -->
+    
+              <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="orga_administrativa1" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="orga_administrativa1">ACUEDUCTOS/VEREDAS</h5>
+    
+                      <div class="modal-header">
+                        <div class="container">
+                          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Representantes</button>
+                        </div>
+                      </div>
+                                                                                     
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                          
+                    </div>
+                    <div class="modal-body">
+                      <table class="table list-group-item-info">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Corregimiento</th>
+                            <th scope="col">Vereda</th>
+                            <th scope="col">Razon Social</th>
+                            <th scope="col">NIT</th>
+                            <th scope="col">Tipo de Prestador</th>
+                            <th scope="col">Clase</th>
+                            <th scope="col">Tipo de Organizacion</th>
+                            <th scope="col">Servicio Prestado</th>
+                            <th scope="col">Zona Atendida</th>
+                            <th scope="col">Inscrito en RUPS</th>
+                            <th scope="col">Estudio Tarifario</th>                        
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Los Andes</td>
+                            <td>Pilas de Cabuyal</td>
+                            <td>ACUAPILAS</td>
+                            <td>Q. Los Venados</td>
+                            <td>2 l/s</td>
+                          </tr>                                            
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <!-- Modal Rio Cali 2 -->
+              
+              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="RepresentantesLegales" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+    
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="RepresentantesLegales">Representantes Legales</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+    
+    
+                    <div class="modal-body">
+                      <table class="table list-group-item-info">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Corregimiento</th>
+                            <th scope="col">Vereda</th>
+                            <th scope="col">Subscriptores acueducto</th>
+                            <th scope="col">Subscriptores alcantarillado</th>
+                            <th scope="col">Representante legal</th>
+                            <th scope="col">Direccion</th>
+                            <th scope="col">Telefono</th>
+                            <th scope="col">Email</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Los Andes</td>
+                            <td>Pilas de Cabuyal</td>
+                            <td>Planta FIMES</td>
+                            <td>Filtro Dinamico, Grueso y Lento</td>
+                            <td>67</td>
+                            <td>335</td>
+                            <td>0.71</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Los Andes</td>
+                            <td>La Reforma</td>
+                            <td>Planta FIMES</td>
+                            <td>Filtro Dinamico, Grueso y Lento</td>
+                            <td>67</td>
+                            <td>335</td>
+                            <td>0.71</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Los Andes</td>
+                            <td>Cabuyal Cristo Rey</td>
+                            <td>Planta FIMES</td>
+                            <td>Filtro Dinamico, Grueso y Lento</td>
+                            <td>67</td>
+                            <td>335</td>
+                            <td>0.71</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Los Andes</td>
+                            <td>Monaco</td>
+                            <td>Planta FIMES</td>
+                            <td>Filtro Dinamico, Grueso y Lento</td>
+                            <td>67</td>
+                            <td>335</td>
+                            <td>0.71</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>Los Andes</td>
+                            <td>Mameyal</td>
+                            <td>Planta FIMES</td>
+                            <td>Filtro Dinamico, Grueso y Lento</td>
+                            <td>67</td>
+                            <td>335</td>
+                            <td>0.71</td>
+                          </tr>
+                          
+                          
+                        </tbody>
+                      </table>     
+                    </div>                
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Rio Cali</a>
+    
+              <!--------------------------------------------- Segundo boton Lili, Melendez, Cañaveralejo -------------------------------------------------->
+    
+              <!-- Modal Lili, Melendez, Cañaveralejo 1-->
+    
+              <div class="modal fade" id="exampleModalToggleLili" aria-hidden="true" aria-labelledby="orga_administrativa2" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="orga_administrativa2">ACUEDUCTOS/VEREDAS</h5>
+    
+                      <div class="modal-header">
+                        <div class="container">
+                          <button class="btn btn-primary" data-bs-target="#exampleModalToggleLili2" data-bs-toggle="modal" data-bs-dismiss="modal">Representantes</button>
+                        </div>
+                      </div>
+                                                                                     
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                          
+                    </div>
+                    <div class="modal-body">
+                      <table class="table list-group-item-info">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Corregimiento</th>
+                            <th scope="col">Vereda</th>
+                            <th scope="col">Razon Social</th>
+                            <th scope="col">NIT</th>
+                            <th scope="col">Tipo de Prestador</th>
+                            <th scope="col">Clase</th>
+                            <th scope="col">Tipo de Organizacion</th>
+                            <th scope="col">Servicio Prestado</th>
+                            <th scope="col">Zona Atendida</th>
+                            <th scope="col">Inscrito en RUPS</th>
+                            <th scope="col">Estudio Tarifario</th>                        
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Buitrera</td>
+                            <td>Pilas de Cabuyal</td>
+                            <td>ACUAPILAS</td>
+                            <td>Q. Los Venados</td>
+                            <td>2 l/s</td>
+                          </tr>                                            
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Modal Lili, Melendez, Cañaveralejo 2-->
+    
+              <div class="modal fade" id="exampleModalToggleLili2" aria-hidden="true" aria-labelledby="RepresentantesLegales2" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+    
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="RepresentantesLegales2">Representantes Legales</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+    
+    
+                    <div class="modal-body">
+                      <table class="table list-group-item-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Corregimiento</th>
+                            <th scope="col">Vereda</th>
+                            <th scope="col">Subscriptores acueducto</th>
+                            <th scope="col">Subscriptores alcantarillado</th>
+                            <th scope="col">Representante legal</th>
+                            <th scope="col">Direccion</th>
+                            <th scope="col">Telefono</th>
+                            <th scope="col">Email</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Buitrera</td>
+                            <td></td>
+                            <td></td>
+                            <td>Filtro Dinamico, Grueso y Lento</td>
+                            <td>67</td>
+                            <td>335</td>
+                            <td>0.71</td>
+                          </tr>                  
+                        </tbody>
+                      </table>     
+                    </div>                
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggleLili" role="button">Lili, Melendez, Cañaveralejo</a>
+              
+              <!------------------------------------------------------- Tercer boton Pance --------------------------------------------------------------->
+    
+              <!-- Modal pance 1-->
+    
+              <div class="modal fade" id="exampleModalTogglePance" aria-hidden="true" aria-labelledby="orga_administrativa3" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="orga_administrativa3">ACUEDUCTOS/VEREDAS</h5>
+    
+                      <div class="modal-header">
+                        <div class="container">
+                          <button class="btn btn-primary" data-bs-target="#exampleModalTogglePance2" data-bs-toggle="modal" data-bs-dismiss="modal">Representantes</button>
+                        </div>
+                      </div>
+                                                                                     
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>                          
+                    </div>
+                    <div class="modal-body">
+                      <table class="table list-group-item-danger">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Corregimiento</th>
+                            <th scope="col">Vereda</th>
+                            <th scope="col">Razon Social</th>
+                            <th scope="col">NIT</th>
+                            <th scope="col">Tipo de Prestador</th>
+                            <th scope="col">Clase</th>
+                            <th scope="col">Tipo de Organizacion</th>
+                            <th scope="col">Servicio Prestado</th>
+                            <th scope="col">Zona Atendida</th>
+                            <th scope="col">Inscrito en RUPS</th>
+                            <th scope="col">Estudio Tarifario</th>                        
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Pance</td>
+                            <td>Pilas de Cabuyal</td>
+                            <td>ACUAPILAS</td>
+                            <td>Q. Los Venados</td>
+                            <td>2 l/s</td>
+                          </tr>                                            
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <!-- Modal Pance 2-->
+    
+              <div class="modal fade" id="exampleModalTogglePance2" aria-hidden="true" aria-labelledby="RepresentantesLegales3" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+    
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="RepresentantesLegales3">Representantes Legales</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+    
+    
+                    <div class="modal-body">
+                      <table class="table list-group-item-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Corregimiento</th>
+                            <th scope="col">Vereda</th>
+                            <th scope="col">Subscriptores acueducto</th>
+                            <th scope="col">Subscriptores alcantarillado</th>
+                            <th scope="col">Representante legal</th>
+                            <th scope="col">Direccion</th>
+                            <th scope="col">Telefono</th>
+                            <th scope="col">Email</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Pance</td>
+                            <td></td>
+                            <td></td>
+                            <td>Filtro Dinamico, Grueso y Lento</td>
+                            <td>67</td>
+                            <td>335</td>
+                            <td>0.71</td>
+                          </tr>                  
+                        </tbody>
+                      </table>     
+                    </div>                
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalTogglePance" role="button">Pance</a>
+    
+              
+    
+              
+    
+    
+            </div>
+          
+          </div>
+        </div>
       </div>
+
+      <!-- FILA DOS -->
 
       <div class="row">
-        <div class="col-sm-6 text-center">
-          <div class="card">
-            <div class="card-header text-white bg-primary mb-3">
-              Descripcion de las PTAPS
+
+        <div class="col-sm-6 text-center shadow-sm p-3 mb-5 bg-body rounded">
+
+
+
+
+          <div class="card ">
+
+            <div class="card-header text-white bg-info mb-3">
+              ACUEDUCTOS RURALES LILI
             </div>
             <div class="card-body">
-              <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Numero de Plantas
-</button>
+              
+              <div class="modal fade" id="exampleModalToggleLILI" aria-hidden="true" aria-labelledby="acueductosRioCali2" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="acueductosRioCali2">ACUEDUCTOS/VEREDAS</h5>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <ol class="list-group list-group-numbered">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-        </ol>
-        
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-            </div>
-          </div>
+                      <div class="modal-header">
+                        <div class="container">
+                          <button class="btn btn-primary" data-bs-target="#conptap2" data-bs-toggle="modal" data-bs-dismiss="modal">Veredas con PTAP</button>
+                        </div>
+                      </div>
 
-        </div>
+                      <div class="modal-header">
+                        <div class="container">
+                          <button class="btn btn-primary" data-bs-target="#sinptap2" data-bs-toggle="modal" data-bs-dismiss="modal">Veredas sin PTAP</button>
+                        </div>
+                      </div>     
 
-        <div class="col-sm-6 text-center">
-          <div class="card">
-            <div class="card-header text-white bg-primary mb-3">
-              Descripcion de las PTARS
-            </div>
-            <div class="card-body">
-              <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-sm rounded-pill" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Numero de Tanques
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <ol class="list-group list-group-numbered">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Cras justo odio</li>
-          
-        </ol>
-        
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-            </div>
-          </div>
-
-        </div>
-
-
-
-
-
-        
-
-      </div>
-
-      <div class="container shadow-sm p-3 mb-5 bg-body rounded">
-        <div class="row">
-            <div class="col-sm-6">
-              <div class="card border border-primary border-0">
-
-                <p>
-                    <a class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
-                      Montebello
-                    </a>
-                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                      Castilla 
-                    </button>
-                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    La Paz 
-                    </button>
-                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Golondrinas 
-                    </button>
-                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        La Elvira 
-                    </button>
-                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Saladito 
-                    </button>
-                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Felidia 
-                    </button>
-                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Leonera 
-                    </button>
-                  </p>
-                <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      
                     </div>
-                </div>
-
-                <div class="collapse" id="collapseExample2">
-                    <div class="card card-body">
-                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    <div class="modal-body">
+                      <table class="table list-group-item-info">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Corregimiento</th>
+                            <th scope="col">Vereda</th>
+                            <th scope="col">Nombre J.A.A</th>
+                            <th scope="col">Fuente de abast</th>
+                            <th scope="col">Caudal Concesion</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          
+                        </tbody>
+                      </table>                      
                     </div>
-                </div>
 
-                 <p>
-                    <a class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                      Andes 
-                    </a>
-                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                      Buitrera 
-                    </button>
-                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Villacarmelo 
-                    </button>
-                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Pance 
-                    </button>
-                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Hormiguero 
-                    </button>
-                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Navarro 
-                    </button>
-                    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Pichinde 
-                    </button>
-                  </p>
-                  <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+              </div>
+
+              <!-- veredas con ptap ide: "conptap2"-->
+
+
+              <div class="modal fade" id="conptap2" aria-hidden="true" aria-labelledby="conptap2" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="conptap2">Veredas con Tratamiento y Servicio de Agua Potable</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+
+                      <div class="modal-body">
+                        <table class="table list-group-item-dark">
+                          <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Corregimiento</th>
+                              <th scope="col">Vereda</th>
+                              <th scope="col">Nombre J.A.A</th>
+                              <th scope="col">Fuente de abast</th>
+                              <th scope="col">Caudal Concesion</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                                                      
+                          </tbody>
+                        </table>                          
+                      </div>
+
+                    </div>
+                    
+
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggleLILI" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
                     </div>
                   </div>
-
-
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card text-center border border-primary border-0">
-                <div class="card-body">
-                  <h5 class="card-title">DISTRIBUCION DE CUENCAS</h5>
-
-                 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-  Rio Cali
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel2">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-  Lili, Melendez, Cañaveralejo
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel2">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-  Pance, Jamundi
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel2">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
                 </div>
               </div>
-            </div>
-          </div>
-      </div>        
-      
-      
-          
-          
-      
-    </div>
 
-    <div class="container text-center">
+              <!-- veredas con ptap ide: "sinptap2"-->
+
+              
+              <div class="modal fade" id="sinptap2" aria-hidden="true" aria-labelledby="sinptap2" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="sinptap2">Veredas sin PTAP</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+
+                      <table class="table list-group-item-info">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Corregimiento</th>
+                            <th scope="col">Vereda</th>
+                            <th scope="col">Nombre J.A.A</th>
+                            <th scope="col">Fuente de abast</th>
+                            <th scope="col">Caudal Concesion</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                                                                         
+                        </tbody>
+                      </table>
+
+                    </div>                    
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggleLILI" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <a class="btn bg-info" data-bs-toggle="modal" href="#exampleModalToggleLILI" role="button">LILI</a>
+
+              <!-- hasta aqui llega el SEGUNDO boton-->
+              
+            </div>
+
+
+
+          </div>
+          
+        </div>
+
+      </div>
+
+      <!-- FILA TRES -->
+
       <div class="row">
+        <div class="col-sm-6 text-center shadow-sm p-3 mb-5 bg-body rounded">
+          <div class="card ">
+            <div class="card-header text-white bg-info mb-3">
+              ACUEDUCTOS RURALES PANCE
+            </div>
+            <div class="card-body">
+              
+              <div class="modal fade" id="exampleModalTogglePANCE" aria-hidden="true" aria-labelledby="acueductosRioCali3" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="acueductosRioCali3">ACUEDUCTOS/VEREDAS</h5>
 
-        <div class="col-sm-6 text-center">
+                      <div class="modal-header">
+                        <div class="container">
+                          <button class="btn btn-primary" data-bs-target="#conptap3" data-bs-toggle="modal" data-bs-dismiss="modal">Veredas con PTAP</button>
+                        </div>
+                      </div>
 
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  
-      
-                  <div class="ms-2 me-auto">
-                    <div class="fw-bold">MONTEBELLO</div>
-                    Serviaguas .ESP
+                      <div class="modal-header">
+                        <div class="container">
+                          <button class="btn btn-primary" data-bs-target="#sinptap3" data-bs-toggle="modal" data-bs-dismiss="modal">Veredas sin PTAP</button>
+                        </div>
+                      </div>     
+
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      
+                    </div>
+                    <div class="modal-body">
+                      <table class="table list-group-item-danger">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Corregimiento</th>
+                            <th scope="col">Vereda</th>
+                            <th scope="col">Nombre J.A.A</th>
+                            <th scope="col">Fuente de abast</th>
+                            <th scope="col">Caudal Concesion</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          
+                        </tbody>
+                      </table>                      
+                    </div>
+
                   </div>
-                  <span class="badge bg-primary rounded-pill">14.000</span>
-                  <span class="badge bg-primary rounded-pill">14.000</span>
-                  <span class="badge bg-primary rounded-pill">14.000</span>
-      
-      
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+
+              <!-- veredas con ptap ide: "conptap3"-->
+
+
+              <div class="modal fade" id="conptap3" aria-hidden="true" aria-labelledby="conptap3" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="conptap3">Veredas con Tratamiento y Servicio de Agua Potable</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+
+                      <div class="modal-body">
+                        <table class="table list-group-item-danger">
+                          <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">Corregimiento</th>
+                              <th scope="col">Vereda</th>
+                              <th scope="col">Nombre J.A.A</th>
+                              <th scope="col">Fuente de abast</th>
+                              <th scope="col">Caudal Concesion</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                                                      
+                          </tbody>
+                        </table>                          
+                      </div>
+
+                    </div>
+                    
+
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#exampleModalTogglePANCE" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+
+              <!-- veredas con ptap ide: "sinptap3"-->
+
+              
+              <div class="modal fade" id="sinptap3" aria-hidden="true" aria-labelledby="sinptap3" tabindex="-1">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="sinptap3">Veredas sin PTAP</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+
+                      <table class="table list-group-item-danger">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Corregimiento</th>
+                            <th scope="col">Vereda</th>
+                            <th scope="col">Nombre J.A.A</th>
+                            <th scope="col">Fuente de abast</th>
+                            <th scope="col">Caudal Concesion</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                                                                         
+                        </tbody>
+                      </table>
+
+                    </div>                    
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#exampleModalTogglePANCE" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button>
+                    </div>
+                  </div>
+                </div>
               </div>
+
+              <a class="btn bg-info" data-bs-toggle="modal" href="#exampleModalTogglePANCE" role="button">PANCE</a>
+
+              <!-- hasta aqui llega el TERCER boton-->
+              
             </div>
           </div>
-    
+          
         </div>
-
-        <div class="col-sm-6">
-
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">ACUEDUCTO</th>
-                <th scope="col">NIT</th>
-                <th scope="col">R. LEGAL</th>
-                <th scope="col">R. LEGAL</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-            </tbody>
-          </table>
-  
-  
-        </div>
-
-
       </div>
-      </div>
-
-      
-
-    
-      
-
+    </div>
+            
     
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
     
   </body>
 </html>
